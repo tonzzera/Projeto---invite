@@ -8,8 +8,8 @@
     cursor: pointer;
 
     &:hover{
-       /* outline: 2px solid var(--color-brand-light);*/
-        background: #202024;
+        outline: 2px solid var(--color-brand-light);
+        opacity: 50%;
     }
 
 
