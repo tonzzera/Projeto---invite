@@ -1,0 +1,54 @@
+.radio-color{
+    margin-top: 1rem;
+    appearance: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px;
+    border: 5px solid var(--color-shape-button);
+    cursor: pointer;
+
+    &:hover{
+        outline: 2px solid var(--color-brand-light);
+    }
+
+
+}
+
+.color-1{
+    background-color: #59B2FF;
+}
+.color-2{
+    background-color: #6A59FF;
+}
+.color-3{
+    background-color: #B259FF;
+}
+.color-4{
+    background-color: #FF59F9;
+}
+.color-5{
+    background-color: #FF598B ;
+}
+.color-6{
+    background-color: #FF5959 ;
+}
+.color-7{
+    background-color: #FF8B59 ;
+}
+.color-8{
+    background-color: #FFCD59;
+}
+.color-9{
+    background-color: #E1FF59;
+}
+.color-10{
+    background-color: #59FF91;
+}
+.color-11{
+    background-color:#59FFF9 ;
+}
+
+.radio-color:checked{
+    outline: 2px solid var(--color-brand-light);
+}
+

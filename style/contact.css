@@ -1,0 +1,115 @@
+.alert-wrapper {
+    display: flex;
+
+    gap: .20rem;
+    align-items: center;
+    text-align: center;
+    margin-top: .25rem;
+}
+
+.alert-wrapper img {
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-danger);
+
+
+}
+
+.alert-wrapper small {
+    font-weight: 400;
+    color: var(--color-danger);
+
+}
+
+.mail-wrapper {
+    width: 20rem;
+    margin-top: 1rem;
+}
+
+.phone-wrapper {
+    width: 20rem;
+    margin-top: 1rem;
+}
+
+.contact-wrapper {
+    height: 20rem;
+    border-bottom: 1px solid var(--color-input-stroke);
+}
+
+
+.terms-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: start;
+
+    label {
+        font: var(--text);
+        color: var(--text-primary);
+    }
+
+    strong {
+        font-weight: 500;
+        font: var(--text);
+        color: var(--color-brand-light);
+    }
+}
+
+.contact-style{
+    height: 20rem;
+}
+
+.checkbox-wrapper {
+    position: relative;
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+
+    input[type="checkbox"] {
+        all: unset;
+        position: absolute;
+        inset: 0;
+        cursor: pointer;
+    }
+
+    .checkbox-image {
+        flex: 0 0 1.5rem;
+        height: 1.5rem;
+        background-image: url(../assets/checkbox-default.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+    &:has(input:checked) .checkbox-image {
+        background-image: url(../assets/checkbox-checked.svg);
+    }
+}
+
+.btn-style {
+
+    width: 12rem;
+    height: 3rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1.25rem;
+    color: white;
+    font: var(--text);
+    background-color: #1D6FB6;
+    border: none;
+    cursor: pointer;
+    margin-top: 4rem;
+    margin-left: auto;
+
+    button {
+        appearance: none;
+    }
+
+}
+
+.btn-style:hover{
+    background-color: var(--color-brand-light);
+}

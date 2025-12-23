@@ -1,0 +1,68 @@
+/* Container principal */
+.switch-wrapper {
+  display: flex;
+  width: 13rem;
+  align-items: center;
+  gap: 12px;
+  font-family: sans-serif;
+}
+.toggle-wrapper{
+  margin-top: 1rem;
+}
+
+
+
+.switch-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch-input {
+  display: none;
+}
+
+/* Fundo do Switch (Estado Desligado) */
+.switch-button {
+  width: 64px;
+  height: 32px;
+  background-color: #1C1F21;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Bolinha (Estado Desligado) */
+.switch-button::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #363B40;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Texto Dinâmico */
+.status-text::after {
+  content: "Escuro";
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* ESTADOS QUANDO LIGADO (CHECKED) */
+.switch-input:checked + .switch-button {
+  background-color: #59B2FF;
+}
+
+.switch-input:checked + .switch-button::before {
+  transform: translateX(32px);
+  background-color: #F9F9F9;
+}
+
+.switch-input:checked ~ .status-text::after {
+  content: "Claro";
+}

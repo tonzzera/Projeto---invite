@@ -1,0 +1,75 @@
+/* Container Principal */
+.segmented-control {
+  position: relative;
+  display: flex;
+  width: 20rem;
+  /* Aumentado para 20rem */
+  height: 3rem;
+  background-color: #1C1F21;
+  border-radius: .25rem;
+  padding: 0.25rem;
+  /* Ajustado para 4px em rem para precisão */
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid var(--color-input-stroke);
+}
+
+.segmented-control input {
+  display: none;
+}
+
+/* Estilo de cada item/lado */
+.segment-item {
+  flex: 1;
+  /* Largura calculada: (20rem total - 0.5rem de padding total) / 2 = 9.75rem */
+  width: 9.75rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  cursor: pointer;
+  z-index: 2;
+  color: #888;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+/* Indicador que fica por baixo (a seleção arredondada) */
+.selection-indicator {
+  position: absolute;
+  width: 9.75rem;
+  /* Deve ser idêntico à largura do segment-item */
+  height: 2.5rem;
+  background-color: #363B40;
+  border-radius: .4rem;
+  /* Arredondamento interno levemente menor fica mais elegante */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+  left: 0.25rem;
+  /* Alinhado com o padding do container */
+}
+
+/* Lógica de Cor do Texto e Movimento */
+#presencial:checked~label[for="presencial"],
+#online:checked~label[for="online"] {
+  color: var(--color-brand-light);
+
+  svg path {
+    stroke: var(--color-brand-light);
+  }
+}
+
+/* Movimento do indicador */
+#presencial:checked~.selection-indicator {
+  transform: translateX(0);
+}
+
+#online:checked~.selection-indicator {
+  /* Move exatamente o tamanho de um item (9.75rem) */
+  transform: translateX(9.75rem);
+}
+
+.local-wrapper {
+  width: 20rem;
+}

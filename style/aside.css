@@ -1,0 +1,36 @@
+aside h1 {
+    font: var(--head);
+    color: var(--color-pink);
+
+}
+
+aside p {
+    font: var(--text);
+    color: var(--text-secondary);
+}
+.sidebar {
+  width: 25rem;
+  height: 100vh;
+  
+}
+
+.sidebar-content {
+  position: relative;
+  height: 100%;
+}
+
+.sidebar-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.branding {
+    padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+

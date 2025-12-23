@@ -1,0 +1,185 @@
+
+
+.cards-wrapper {
+    max-width: 41rem;
+    height: 24rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+.theme-card{
+  height: 7.5rem;
+}
+
+.theme-wrapper>label {
+    margin-top: 2rem;
+}
+
+
+
+.theme-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+
+.radio-theme {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: .25rem;
+  align-items: center;
+  width: 9.5rem; 
+  height: 7.5rem;   
+  background:#363B40; 
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+
+.birth {
+  width: 7.875rem;
+  height: 4rem; 
+  background-image: url(/assets/birth.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.child {
+  width: 7.875rem;
+  height: 4rem; 
+  background-image: url(/assets/child.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.formatura {
+  width: 7.875rem;
+  height: 4rem; /* Altura solicitada */
+  background-image: url(/assets/formatura.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.maried {
+  width: 7.875rem;
+  height: 4rem; /* Altura solicitada */
+  background-image: url(/assets/maried.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+}
+
+.baby {
+  width: 7.875rem;
+  height: 4rem; /* Altura solicitada */
+  background-image: url(/assets/baby.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+}
+
+.panela{
+  width: 7.875rem;
+  height: 4rem; /* Altura solicitada */
+  background-image: url(/assets/panela.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+}
+
+.carnaval{
+  width: 7.875rem;
+  height: 4rem; /* Altura solicitada */
+  background-image: url(/assets/carnaval.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+}
+
+.pascoa{
+  width: 7.875rem;
+  height: 4rem; /* Altura solicitada */
+  background-image: url(/assets/pascoa.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+}
+.saojoao{
+  width: 7.875rem;
+  height: 4rem; /* Altura solicitada */
+  background-image: url(/assets/saojoao.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+}
+
+.halloween{
+  width: 7.875rem;
+  height: 4rem; /* Altura solicitada */
+  background-image: url(/assets/halloween.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+}
+
+.natal{
+  width: 7.875rem;
+  height: 4rem; /* Altura solicitada */
+  background-image: url(/assets/natal.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+}
+
+.others{
+  width: 7.875rem;
+  height: 4rem; /* Altura solicitada */
+  background-image: url(/assets/others.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+}
+
+/* O texto abaixo da imagem */
+.card-title {
+  color: white;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* --- O TRUQUE DA SELEÇÃO --- */
+/* Quando o rádio estiver checado, o label vizinho (+) muda o outline */
+.radio-theme:checked + .card-content {
+  outline: 1px solid var(--color-brand-light); /* Igual ao seu exemplo anterior */
+  border-color: var(--color-brand-light);
+}
+
+/* Efeito de Hover */
+.card-content:hover {
+  background: #202024;
+}

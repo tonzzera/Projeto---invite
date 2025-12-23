@@ -1,0 +1,41 @@
+.main-container{
+    padding: 5rem;
+    width: 51.25rem;
+}
+
+h2{
+    font: var(--head-md);
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+}
+
+fieldset{
+    
+    font: var(--head-sm);
+    color: var(--text-secondary);
+    border: none;
+    margin-top: 3rem;
+
+    img{
+        width:1.5rem ;
+        height: 1.5rem;
+    }
+
+    legend{
+        display: flex;
+        gap: .75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    label  {
+        font: var(--text-sm);
+    }
+}
+textarea{
+    resize: none;
+    padding: 1rem;
+    width: 41rem;
+    height: 8.5rem;
+
+}
+
